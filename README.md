@@ -13,6 +13,7 @@ A dynamic web application that compares the length of time it would take for dif
 
 ### Introduction 
 
+Passwords are a great deal of importance. With new techonolgies
 
 
 ### Features
