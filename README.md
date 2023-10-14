@@ -14,11 +14,11 @@ A dynamic web application that compares the length of time it would take for dif
 ### Introduction 
 
 
-Passwords are of a great deal of importance. With new technologies being developed, there is concern with our safety being put at risk. I looked around and got curious as to how much faster these newer machines would be at cracking our passwords. While there are websites out there that will allow you to test the strength of your password, I couldn’t find anything that compared this strength between different machines. 
+This web application serves as an educational tool for understanding the impact of computational power on password security. It provides real-time estimates on the time required for different types of computing machines to brute-force a given password, shedding light on the evolving challenges of cybersecurity.
 
 ### Features
-- A **dynamic password search bar** that allows you to test a password in **real time**.
-- A **range of machines** ( *Atari 2600*, a *modern computer*, a *super computer*, and a *quantum computer*) to test a password’s strength.
+- Real-time Password Strength Assessment: Instantly evaluate the strength of a password as you type.
+- Multi-machine Comparison: Includes a range of computing machines for comparison, such as Atari 2600, a typical modern computer, a supercomputer, and a speculative quantum computer.
 
 Brute forcing depends on many factors such as the hashing algorithm used, the attacker's knowledge, computing power, etc. 
 
@@ -46,6 +46,7 @@ Quantum Computer: 1 Quadrillion guesses per second.
 
 Explanation: Quantum computers are still in their early stages. There is the potential of quantum computers being able to brute force passwords. When it comes to quantum computers, things start to change a little more than we have seen previously with the other machines. They are not necessarily ‘faster’ in every way, they also work differently. The application of quantum computers is still a topic of research. However, there are theories that quantum computers could be much faster than supercomputers. Some even speculate that they will break security as a whole. I used a quadrillion guesses per second. This is not a scientific number as this technology is still in its experimental stage. However, some problems can be solved much faster with a quantum computer. Perhaps, this is also the case with brute forcing passwords. 
 
+Disclaimer: The 'guesses per second' figures used in this application are approximations and should be used for illustrative purposes only. They are based on a mix of general knowledge and estimation to provide a basic understanding of how different types of computing machines may vary in their ability to crack passwords via brute force. These numbers are not derived from empirical data or rigorous research. Future versions of this application aim to improve the accuracy of these estimations.
 
 
 ### Technology Stack
@@ -60,7 +61,7 @@ For installation, simply clone or download the repository. There is also the opt
 
 ### Usage
 
-To start, type in a password you would like to test. (Note: The website does not store any passwords. That functionality will not be added for privacy purposes). Experiment with how different passwords impact brute force timing. 
+To start, type in a password you would like to test. (Note: **The website does not store any passwords. That functionality will not be added for privacy purposes**). Experiment with how different passwords impact brute force timing. 
 
 ### Feedback
 
