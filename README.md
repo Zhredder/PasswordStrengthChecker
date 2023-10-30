@@ -72,7 +72,7 @@ I am always looking to improve. If you have any constructive criticism or feedba
 There are a few features I would like to add to this app in the future. Some of these features include:
 
 - The password search bar turns different colors reflecting the general strength of the password 
-- A welcome page, giving information about the importance of a strong password, welcoming the user, and explaining the purpose behind the app. 
+- A welcome page, giving information about the importance of a strong password, welcoming the user, and explaining the purpose behind the app. *finished*
 - The ability to click on any of the machines and learn about their history.
 - Improve the accuracy of the guesses by going through more research and testing. 
 
