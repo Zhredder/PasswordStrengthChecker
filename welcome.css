@@ -1,0 +1,20 @@
+#welcome {
+    background-color: #000000;
+    color: rgba(52,213,125,255);
+    /*Source: https://www.reddit.com/r/Fallout/comments/1r5i8n/a_1280x1024_desktop_background_based_on_the/?rdt=44604  */
+    background-image: url("Images/8K9bwBN.png");
+    font-family: "ModeSeven";
+    font-size: 14px;
+    padding-top: 250px;
+    padding-left: 12px;
+  }
+
+  button {
+    font-family: "ModeSeven";
+    height: 40px;
+    width:  130px;
+    color: #000000;
+    font-size: 15px;
+    border-color: #000000;
+    
+  }
