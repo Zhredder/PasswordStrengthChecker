@@ -56,7 +56,7 @@ This web app was built using HTML, CSS, and Vanilla Javascript.
 
 ### Getting Started
 
-For installation, simply clone or download the repository. There is also the option to run this web app online through my website (currently in development). After downloading, simply double-click ‘index.html’ and you’re good to go!
+For installation, simply clone or download the repository. There is also the option to run this web app online through my website (can be found on my profile). After downloading, simply double-click ‘index.html’ and you’re good to go!
 
 
 ### Usage
