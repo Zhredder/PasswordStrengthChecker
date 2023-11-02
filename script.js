@@ -29,7 +29,21 @@ function passwordInputChange(){
     calculateAtari(totalCombinations);
     //calculate time for super computer
     calculateSuper(totalCombinations);
+    //check password length
+    changeInputColor(size);
     
+}
+
+function changeInputColor(size){
+
+    const element = document.querySelector('input');
+
+    if(size >= 14){
+        element.style.borderColor = 'green'
+    }
+    else{
+        element.style.borderColor = 'red'
+    }
 }
 
 function calculateAtari(combinations){

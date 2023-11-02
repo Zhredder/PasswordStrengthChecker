@@ -125,25 +125,18 @@
     }
 }
 
-#password-input {
-  
-  color: #000;
+input[type="password"] {
+  font-size: 19px;
+  color: #000000;
+  border-width: 20px;
+  border-color: red;
+  font-family: 'Calibri';
   margin-left: 500px;
   z-index: 10;
   margin-top: 20px;
-  width: 70%;
+  width: 49.5%;
   
   
-  
-}
-
-input[type="password"] {
-  width: 70%;
-  font-size: 19px;
-  color: #000;
-  border-width: 28px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  z-index: 10;
  
 }
 
@@ -168,7 +161,7 @@ input[type="password"] {
   height: 450px;
   width: 450px;
   position: fixed;
-  margin-left: 500px;
+  margin-left: 450px;
   
   
   
@@ -177,7 +170,7 @@ input[type="password"] {
 #atariComputerTime{
   color: #ffffff;
   margin-top: 470px;
-  margin-left: 585px;
+  margin-left: 535px;
   position: fixed;
   
 }
