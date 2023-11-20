@@ -61,7 +61,7 @@ For installation, simply clone or download the repository. There is also the opt
 
 ### Usage
 
-To start, type in a password you would like to test. (Note: **The website does not store any passwords. That functionality will not be added for privacy purposes**). Experiment with how different passwords impact brute force timing. You can also click on each machine to learn more about them.
+To start, type in a password you would like to test. (Note: **The website does not store any passwords. That functionality will not be added for privacy purposes**). Experiment with how different passwords impact brute force timing. The input box will turn green when a password of a sufficient length is entered. You can also click on each machine to learn more about them.
 
 ### Feedback
 
