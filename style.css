@@ -148,6 +148,7 @@ input[type="password"] {
   margin-left: 80px;
 }
 
+
 #quantumComputerTime{
   color: #ffffff;
   margin-top: 470px;
@@ -157,11 +158,14 @@ input[type="password"] {
   
 }
 
+
 #atari {
-  height: 450px;
-  width: 450px;
+  height: 440px;
+  width: 440px;
   position: fixed;
-  margin-left: 450px;
+  margin-left: 480px;
+  margin-top: 20px;
+
   
   
   
@@ -206,6 +210,51 @@ input[type="password"] {
   position: fixed;
   
 }
+
+#quantum:hover, #atari:hover, #modern:hover, #super:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+dialog {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 800px;
+}
+
+dialog::backdrop {
+  background: hsla(0, 0%, 0%, 0.90);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+.modal-header .modal-close {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border: none;
+  background: none;
+  outline: none;
+}
+  
 
 
 

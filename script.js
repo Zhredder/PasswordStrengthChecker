@@ -1,5 +1,47 @@
 document.addEventListener("DOMContentLoaded", function(){
 
+
+var btnQuantum = document.getElementById("quantum")
+var btnAtari = document.getElementById("atari")
+var btnSuper = document.getElementById("super")
+var btnModern = document.getElementById("modern")
+
+//Get the dialog
+var modalQuantum = document.getElementById("dialogQuantum")
+var modalAtari = document.getElementById("dialogAtari")
+var modalModern = document.getElementById("dialogModern")
+var modalSuper = document.getElementById("dialogSuper")
+
+//Get the close button
+var btnCloses = document.querySelectorAll("dialog button.modal-close")
+
+//When user clicks image, open modal
+btnQuantum.addEventListener("click", () => {
+    modalQuantum.showModal()
+})
+
+btnAtari.addEventListener("click", () => {
+    modalAtari.showModal()
+})
+
+btnSuper.addEventListener("click", () => {
+    modalSuper.showModal()
+})
+
+btnModern.addEventListener("click", () => {
+    modalModern.showModal()
+})
+
+//Attach a close event to every close button
+btnCloses.forEach(function(btnClose) {
+    btnClose.addEventListener("click", function(){
+        var dialog = btnClose.closest('dialog');
+        dialog.close();
+    });
+});
+
+
+
 //Get the value and put it inside the variable
 var passwordInput = document.getElementById('typed-password');
 
