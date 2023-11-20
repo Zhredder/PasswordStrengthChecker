@@ -56,7 +56,7 @@ This web app was built using HTML, CSS, and Vanilla Javascript.
 
 ### Getting Started
 
-For installation, simply clone or download the repository. There is also the option to run this web app online through my website (currently in development). After downloading, simply double-click ‘index.html’ and you’re good to go!
+For installation, simply clone or download the repository. There is also the option to run this web app online through my website (can be found on my profile). After downloading, simply double-click ‘index.html’ and you’re good to go!
 
 
 ### Usage
@@ -71,7 +71,7 @@ I am always looking to improve. If you have any constructive criticism or feedba
 
 There are a few features I would like to add to this app in the future. Green means it has been added, red means it has yet to be added. Some of these features include:
 ```diff
-- The password search bar turns different colors reflecting the general strength of the password 
++ The password search bar turns different colors reflecting the general strength of the password 
 + A welcome page, giving information about the importance of a strong password, welcoming the user, and explaining the purpose behind the app. 
 - The ability to click on any of the machines and learn about their history.
 - Improve the accuracy of the guesses by going through more research and testing. 
