@@ -61,7 +61,7 @@ For installation, simply clone or download the repository. There is also the opt
 
 ### Usage
 
-To start, type in a password you would like to test. (Note: **The website does not store any passwords. That functionality will not be added for privacy purposes**). Experiment with how different passwords impact brute force timing. 
+To start, type in a password you would like to test. (Note: **The website does not store any passwords. That functionality will not be added for privacy purposes**). Experiment with how different passwords impact brute force timing. The input box will turn green when a password of a sufficient length is entered. You can also click on each machine to learn more about them.
 
 ### Feedback
 
@@ -73,7 +73,8 @@ There are a few features I would like to add to this app in the future. Green me
 ```diff
 + The password search bar turns different colors reflecting the general strength of the password 
 + A welcome page, giving information about the importance of a strong password, welcoming the user, and explaining the purpose behind the app. 
-- The ability to click on any of the machines and learn about their history.
-- Improve the accuracy of the guesses by going through more research and testing. 
++ The ability to click on any of the machines and learn about their history.
+- Make the website responsive
+
 
 
