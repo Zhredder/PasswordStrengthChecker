@@ -2,23 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
+    
   }
-  
+
+
   html, body {
-    height: 100%;
+    
+    
+   
   }
   
   body {
-    
-    width: 100%;
-    height: 100%;
+
     background-color: #171717;
     color: #000;
     line-height: 1.6;
     font-family: sans-serif;
-   
 
 }
+
+
   
 /*
   .lines {
@@ -93,6 +96,7 @@
 
   #heading{
    
+    
     color: #fff;
     font-family: 'Work Sans', sans-serif;
     font-weight: 900;
@@ -100,6 +104,7 @@
     text-transform: uppercase;
     line-height: 48px;
     padding-top: 50px;
+
     
 
     
@@ -156,28 +161,24 @@
 #quantum {
   height: 300px;
   width: 300px;
-  position: fixed;
-  margin-top: 100px;
-  margin-left: 80px;
+  
 }
 
 
 #quantumComputerTime{
   color: #ffffff;
-  margin-top: 470px;
-  margin-left: 50px;
-  position: fixed;
-  
   
 }
+ 
+  
+  
+
 
 
 #atari {
   height: 440px;
   width: 440px;
-  position: fixed;
-  margin-left: 480px;
-  margin-top: 20px;
+  
 
   
   
@@ -186,42 +187,56 @@
 
 #atariComputerTime{
   color: #ffffff;
-  margin-top: 470px;
-  margin-left: 535px;
-  position: fixed;
+  
+  
   
 }
 
 #modern {
   height: 250px;
   width: 250px;
-  position: fixed;
-  margin-left: 1055px;
-  margin-top: 130px;
+  
+  
 }
-
 #modernComputerTime{
   color: #ffffff;
-  margin-top: 470px;
-  margin-left: 1000px;
-  position: fixed;
+  
   
 }
 
 #super {
   height: 255px;
   width: 290px;
-  position: fixed;
-  margin-left: 1550px;
-  margin-top: 130px;
+ 
+  
 }
 
 #superComputerTime{
   color: #ffffff;
-  margin-top: 470px;
-  margin-left: 1500px;
-  position: fixed;
   
+ 
+  
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.description {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4em;
+}
+
+.item-2{
+  transform: translateX(-90px); 
+}
+
+.item-3 {
+  transform: translateX(-70px);
 }
 
 #quantum:hover, #atari:hover, #modern:hover, #super:hover{
