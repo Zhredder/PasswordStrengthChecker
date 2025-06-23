@@ -74,7 +74,8 @@ There are a few features I would like to add to this app in the future. Green me
 + The password search bar turns different colors reflecting the general strength of the password 
 + A welcome page, giving information about the importance of a strong password, welcoming the user, and explaining the purpose behind the app. 
 + The ability to click on any of the machines and learn about their history.
-- Make the website responsive
++ Make the website responsive
+- Improve password logic - implement zxcvbn and k - anonymity API
 
 
 
