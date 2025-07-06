@@ -22,7 +22,7 @@ This web application serves as an educational tool for understanding the impact 
 
 Brute forcing depends on many factors such as the hashing algorithm used, the attacker's knowledge, computing power, etc. 
 
-The algorithm uses a guesses-per-second method to measure brute force for now. I might implement a more sophisticated algorithm in the future to more accurately calculate brute force timing. The point of the web app is not necessarily to get an exact precise time for brute forcing, but to give a feel for how differences in computing power can impact brute force crack time.
+The algorithm uses a guesses-per-second method to measure brute force for now. I am working on a more sophisticated way of calculating brute force time with zxcvbn. The point of the web app is not necessarily to get an exact precise time for brute forcing, but to give a feel for how differences in computing power can impact brute force crack time.
 
 The ‘guesses per second’ need to take into account the specifications of the machine used. While getting an exact number of them is difficult, I have used reasonable estimates from the research I have done on the machines. 
 
