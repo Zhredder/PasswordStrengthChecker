@@ -42,56 +42,77 @@ btnCloses.forEach(function(btnClose) {
 
 
 
-//Get the value and put it inside the variable
+//user typed password 
 var passwordInput = document.getElementById('typed-password');
 
-//Store machine guesses times. Guesses/second
+
+
+//Store machine guesses times. Guesses/second, oracle rate for quantum. See notes. 
 var machines = {
 
-    'Atari 2600': 0.1,
-    'Modern Computer': 1e9, //1 billion
-    'Super Computer': 1e12, //1 trillion
-    'Quantum Computer': 1e15 //1 quadrillion
+    'Atari 2600': 1,
+    'Modern Computer': 5750, 
+    'Super Computer': 42000000, 
+    'Quantum Computer': 1000,
 };
 
 //Calculate and display brute force time
 function passwordInputChange(){
 
-    var symbols = 92;
-    var size = passwordInput.value.length;
+    //Takes user input password and lets zxcvbn use it
+    var pwd = passwordInput.value;
+    var zx = zxcvbn(pwd);
+    
+    
 
-    //calculate total combinations
-    var totalCombinations = Math.pow(symbols, size);
+    console.log(zx.guesses);
 
-    //calculate time for a modern computer
-    calculateModern(totalCombinations);
-    //calculate time for quantum computer
-    calculateQuantum(totalCombinations);
     //calculate time for atari computer
-    calculateAtari(totalCombinations);
+    calculateAtari(zx.guesses);
+    //calculate time for a modern computer
+    calculateModern(zx.guesses);
     //calculate time for super computer
-    calculateSuper(totalCombinations);
-    //check password length
-    changeInputColor(size);
+    calculateSuper(zx.guesses);
+    //calculate time for quantum computer
+    calculateQuantum(zx.guesses);
+    //change the color of the input bar
+    changeInputColor(zx);
+    
+
+    
+   
     
 }
 
-function changeInputColor(size){
+//Uses zxcvbn to determine the strength of the password, gives a range of numbers
+//between 0-4, which changes the color accordingly
+
+function changeInputColor(value){
+
 
     const element = document.querySelector('input');
 
-    if(size >= 14){
-        element.style.borderColor = 'green'
+
+    if(value.score == 4){
+        element.style.borderColor = 'green';
     }
-    else{
-        element.style.borderColor = 'red'
+    else if (value.score == 3){{
+        element.style.borderColor = 'orange';
+    }
+
+    }
+    else if (value.score == 2){
+        element.style.borderColor = 'red';
+    }
+    else {
+        element.style.borderColor = 'rgb(218, 208, 208)';
     }
 }
 
-function calculateAtari(combinations){
+function calculateAtari(guesses){
 
      //calculate total time
-     var totalTime = combinations/machines['Atari 2600'];
+     var totalTime = guesses/machines['Atari 2600'];
 
      //calculate the time
      var computedTime = timeComputation(totalTime);
@@ -147,10 +168,10 @@ function calculateSuper(combinations){
      
     
 }
-function calculateQuantum(combinations){
+function calculateQuantum(guesses){
 
     //calculate total time
-    var totalTime = combinations/machines["Quantum Computer"];
+    var totalTime = (Math.sqrt(guesses))/machines["Quantum Computer"];
 
     //calculate the time
     var computedTime = timeComputation(totalTime);

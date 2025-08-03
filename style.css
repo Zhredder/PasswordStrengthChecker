@@ -137,26 +137,25 @@
   .input {
     display: flex;
     justify-content: center;
+    
   }
 
 
   #typed-password {
   display: flex;
   font-size: 19px;
-  color: #000000;
-  border-width: 20px;
-  border-color: red;
+  border-width: 15px;
   font-family: 'Calibri';
   z-index: 10;
   margin-top: 20px; 
   width: 50%;
-  
-
-  
-  
-  
+  border-color: rgb(218, 208, 208);
  
 }
+
+ 
+
+
 
 
 
