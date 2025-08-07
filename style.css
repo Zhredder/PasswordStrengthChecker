@@ -275,12 +275,10 @@
 }
 
 dialog {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
   border: 1px solid black;
   border-radius: 10px;
   width: 800px;
+  
 }
 
 dialog::backdrop {
@@ -290,7 +288,7 @@ dialog::backdrop {
 .modal-header {
   padding: 10px 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   border-bottom: 1px solid black;
 }
@@ -302,6 +300,7 @@ dialog::backdrop {
 
 .modal-body {
   padding: 10px 15px;
+  
 }
 
 .modal-header .modal-close {
